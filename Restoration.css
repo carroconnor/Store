@@ -9,9 +9,10 @@ body{
 header{
 	font-weight: bold;
 }
+
 #title{
 	position: absolute;
-    top: 50%;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -49,6 +50,7 @@ header{
 	float: left;
 	height: 300px;
 	width: 500px;
+  transition: transform 0.5s ease;
 }
 #midright{
 	float: right;
@@ -67,7 +69,21 @@ header{
   float: left;
   text-align: center;
 }
+.image-container{
+  overflow: hidden;
+  position: relative;
+  float: left;
+  height: 300px;
+  width: 500px;
+  
 }
+.image-container img{
+  transition: transform 0.5s ease;
+
+}
+.image-container:hover img{
+  transform: scale(1.5);
+
 }
 .divheading
 {
@@ -89,6 +105,7 @@ header{
   position: fixed;
   top: 15px;
   left: 37%;
+  z-index: 5;
 }
 .nav li {
   font-family: 'Oswald', sans-serif;
